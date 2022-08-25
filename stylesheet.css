@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#left-container{
+    background-image: url("./bg-main-desktop.png");
+    width:25% ;
+    height: 100vh;
+    color: white;
+    display: inline-block;
+    
+}
+.card{
+    width: 250px;
+    height: 140px;
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    
+}
+#fg-card{
+    
+    background-image: url(./bg-card-front.png);
+    top: 20%;
+    left: 7%;
+}
+#bg-card{
+    background-image: url(./bg-card-back.png);
+    top: 60%;
+    left: 12%   ;
+   
+}
+#card-logo{
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 20%;
+}
+#card-number{
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 1.2  rem;
+    letter-spacing: 2px;
+    margin-bottom: 3%;
+}
+#holder-name{
+    font-size: 0.8rem;
+    margin-left: 8%;
+    
+    display: inline;
+}
+#exp{
+    font-size: 0.8rem;
+    display: inline;
+    margin-right: 5px;
+    float: right;
+   
+}   
+#cvc{
+    position: absolute;
+    top:45%;
+    right: 30%;
+}
+#right-container{
+    
+    height: 100vh;width: 75%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    float:right;
+    
+}
+.hidden-content{
+    flex-direction: column;
+}
+.hidden-content *{
+    margin-bottom: 10px;
+}
+.hidden-content p{
+    color:#6234E0;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.hidden-content span{
+    margin-top: -8px;
+    font-size: 0.8rem;
+    color:#ADB5BE;
+}
+.hidden-content button{
+    border: solid 1px #210930;
+    color: white;
+   background-color: #210930;
+   width: 20%;
+   height: 30px;
+}
+.hide{
+    display: none;
+}
+#right-container form{
+    width: 30%;
+    
+}
+.wide-input{
+    width: 100%;
+}
+
+#exp-p,#cvc-p{
+    display: inline;
+}
+#mm{
+margin-right: 5px;
+display: inline;
+width:45px ;
+
+}
+#yy{
+    display: inline;
+    width:45px ;
+}
+#cvc-input{
+    
+    width: 90px;
+}
+input[type="submit"]{
+    display: block;
+    width: 100%;
+    border-radius: 5%;
+    background-color: rgb(51, 1, 51);
+    color: white;
+    
+}
+input{
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 2%;
+    padding-left: 2px; 
+    margin-top: 5px;
+    margin-bottom: 10px; 
+    
+}
+.error{
+    color: red;
+    font-size: 0.8rem;
+    
+}
+
+#idk{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+@media (max-width:700px) {
+   
+    #left-container{
+        background-image: url("./bg-main-desktop.png");
+        height: 35vh;
+        width: 100vw;
+        background-size: cover;
+        color: white;
+        display: inline-block;
+        
+    }
+    #fg-card{
+        top: 20%;
+        left: 30%;
+        z-index: 1;
+    }
+    #bg-card{
+        position:absolute;
+        top: 5%;
+        left: 40%;
+        z-index: 0;
+    }
+    #right-container{
+        width: 100%;
+       
+    }
+
+}
